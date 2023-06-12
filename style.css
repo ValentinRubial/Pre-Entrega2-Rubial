@@ -1,0 +1,237 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@media (max-width:320px){
+   html{
+      height: 100%;
+   }
+   body {
+      background-color: #567ca4;
+      font-size: 1em;
+      font-family: 'Times New Roman', Times, serif;
+      height: 100%;
+   }
+   .conteiner__header *{
+      text-decoration: underline;
+   }
+   .menu{
+      display: flex;
+      list-style: none;
+   }
+   .menu li{
+      margin: 0 5px;
+   }
+   ul li a {
+      text-decoration: none;
+      color: white;
+   }
+
+   div p{
+      font-size: 1em;
+   }
+   footer{
+      color: white;
+   }
+   .conteiner{
+      display: grid;
+      gap: 1em;
+      grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: 1fr 15% 1fr 1fr;
+   }
+   .conteiner__nav{
+      grid-area: nav;
+      text-align: end;
+      font-size: 1.2em;
+      background-color: #57a5e4;
+   }
+   .conteiner__header{
+      grid-area: header;
+      background-color: #57a5e4;
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+      padding: 1em;
+   }
+   .conteiner__main{
+      grid-area: main;
+      text-align: center;
+      background-color: #57a5e4;
+      font-size: 1.2em;
+   }
+   .conteiner__footer{
+      grid-area: footer;
+      background-color: #57a5e4;
+      text-align: center;
+      font-size: 1.2em;
+   }
+   .div-mapa{
+      display: flex;
+      justify-content: center;
+   }
+   .div-mapa iframe{
+      height: 14em;
+      width: 90%;
+      margin: 2em;
+   }
+
+   /* Galeria.html Y Similares.html */
+
+   .div-imagenes{
+      display: flex;
+      display: block;
+   }
+   .imagenes{
+      justify-content: center;
+      height: 12em;
+      width: 90%;
+      margin: 1em;
+      border: 10px solid #153365;
+   }
+   .div-video{
+      display: flex;
+      display: block;
+   }
+   .video{
+      width: 90%;
+      border: 10px solid #153365;
+   }
+   .enlaces{
+      margin: 4em;
+      color: white;
+   }
+}
+
+@media (min-width:1024px){
+   body {
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url(./imagenes/aconcagua.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 30px;
+   }
+   .conteiner {
+      display: grid;
+      gap: 1em;
+      grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "footer";
+      grid-template-rows: 7% 15% 1fr 7%;
+   }
+   .conteiner__nav{
+      grid-area: nav;
+   }
+   .conteiner__header{
+      grid-area: header;
+   }
+   .conteiner__main{
+      grid-area: main;
+   }
+   .conteiner__footer{
+      grid-area: footer;
+   }
+   .menu{
+      display: flex;
+      justify-content: end;
+      list-style: none;
+   }
+   .menu li{
+      margin: 1em;
+   }
+   li a{
+      text-decoration: none;
+      color: white;
+      font-size: 2em;
+   }
+   h1{
+      font-size: 4em;
+   }
+   h2{
+      font-size: 2em;
+      margin-left: 3em;
+      margin-right: 3em;
+   }
+   footer{
+      display: flex;
+      justify-content: center;
+      font-size: 2em;
+   }
+
+   /* Index.html */
+
+   .div-mapa{
+      display: flex;
+      justify-content: center;
+   }
+   .div-p{
+      display: flex;
+   }
+   div p{
+      text-align: center;
+      font-size: 1.3em;
+      color: white;
+      padding: 1em;
+   }
+
+   /* Galeria.html */
+
+   .div-imagenes{
+      display: flex;
+      justify-content: center;
+   }
+   .div-video{
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+   }
+   .video{
+      width: 46%;
+      height: 22em;
+   }
+
+   /* Informacion.html */
+
+   .conteiner__main p{
+      margin: 1em;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: black;
+   }
+
+   /* Similares.html */
+
+   .div-img-similares{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .imagenes{
+      background-color: #153365;
+      margin-top: 4em;
+      padding: 2em;
+      height: 18em;
+      width: 21em;
+   }
+   .div-e{
+      display: flex;
+      justify-content: center;
+      margin: 16px;
+   }
+   .enlaces{
+      padding: 1,4em;
+      margin: 2em 5em;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: black;
+   }
+}
